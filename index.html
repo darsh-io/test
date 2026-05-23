@@ -1,1 +1,176 @@
-<p>hi if u see this i finally got a domain YAYAYAYAYAYYAYAYYAYAYAYAAYAYAYAYYA</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>singhals.org</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Inter, system-ui, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #09090f, #12122a, #1d1035);
+            color: white;
+            min-height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .bg-glow {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.25;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .bg1 {
+            background: #7c3aed;
+            top: -100px;
+            left: -100px;
+        }
+
+        .bg2 {
+            background: #2563eb;
+            bottom: -100px;
+            right: -100px;
+            animation-delay: 2s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-30px); }
+        }
+
+        .container {
+            z-index: 10;
+            text-align: center;
+            padding: 2rem;
+            max-width: 900px;
+        }
+
+        h1 {
+            font-size: clamp(3rem, 10vw, 7rem);
+            font-weight: 900;
+            letter-spacing: -0.05em;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 0 30px rgba(255,255,255,0.15);
+        }
+
+        .subtitle {
+            font-size: clamp(1rem, 2vw, 1.4rem);
+            color: rgba(255,255,255,0.75);
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 999px;
+            background: rgba(124, 58, 237, 0.2);
+            border: 1px solid rgba(124, 58, 237, 0.4);
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .main-text {
+            font-size: clamp(1.1rem, 2vw, 1.5rem);
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .accent {
+            color: #a78bfa;
+            font-weight: 700;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            text-decoration: none;
+            color: white;
+            padding: 0.9rem 1.5rem;
+            border-radius: 14px;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.12);
+            transition: 0.25s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-4px);
+            background: rgba(255,255,255,0.14);
+        }
+
+        .footer {
+            margin-top: 2rem;
+            color: rgba(255,255,255,0.45);
+            font-size: 0.9rem;
+        }
+
+        .cursor {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-glow bg1"></div>
+    <div class="bg-glow bg2"></div>
+
+    <div class="container">
+        <div class="tag">🌐 FIRST DOMAIN ACQUIRED</div>
+
+        <h1>singhals.org</h1>
+
+        <div class="card">
+            <p class="main-text">
+                hi. yes. this is <span class="accent">my domain.</span><br>
+                i fought DNS, GitHub Pages, Cloudflare, router cache goblins,<br>
+                and distributed systems nonsense to make this happen.
+            </p>
+
+            <p class="main-text">
+                i'm <span class="accent">Darsh</span>.<br>
+                i build stuff, break stuff, then somehow make it work.
+                <span class="cursor">_</span>
+            </p>
+
+            <div class="links">
+                <a href="https://github.com/" class="btn">GitHub</a>
+                <a href="#" class="btn">Projects (soon™)</a>
+                <a href="#" class="btn">Chaos Lab</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            powered by questionable decisions and caffeine ☕
+        </div>
+    </div>
+</body>
+</html>
